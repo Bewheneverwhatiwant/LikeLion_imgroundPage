@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body style="overflow: hidden;">
+    <div style="float:left; background-color: yellow;">
+    <hl class="styleofH1">안녕하세요! 자유롭고 행복한 이나영입니다</hl>
+
+    
+    <p>저와 관련된 퀴즈를 맞추며 저를 이해해보세요^^</p>
+    <p class="my1">1. 나영이가 가장 좋아하는 음식은?</p>
+    <button type="button" onclick="javascript:alert('롯데리아 클래식치즈버거에 토핑 추가');">
+        정답확인
+    </button>
+    <p class="my1">2. 나영이의 취미는?</p>
+    <button type="button" onclick="javascript:alert('누워서 강의듣기, 누워서 코딩하기, 누워있기');">
+        정답확인
+    </button>
+    <p class="my1">3. 나영이가 싫어하는 것은?</p>
+    <button type="button" onclick="javascript:alert('교수님 만나러 가기');">
+        정답확인
+    </button>
+
+    <div class="ny2" style="background-color: yellow; width: 300px; height: 110px;">
+      <p>멋쟁이사자처럼 11기에서 프론트엔드 개발을 맡았습니다.<br>
+      본전공은 독일어통번역학과이고, 이중전공으로 컴퓨터공학과를 선택했습니당<br>
+      21학번 올해 22살입니다 :D</p>
+    </div>
+</div>
+
+<div id="image-slider">
+    <img src="나영1.jpg" alt="Image 1" width="300px" height="500px">
+    <img src="나영2.jpg" alt="Image 2" width="300px" height="500px">
+    <img src="나영3.jpg" alt="Image 3" width="300px" height="500px">
+    <img src="나영4.jpg" alt="Image 4" width="300px" height="500px">
+    <img src="나영5.jpg" alt="Image 5" width="300px" height="500px">
+    <img src="나영6.jpg" alt="Image 6" width="300px" height="500px">
+    <div>
+      <p style="background-color: pink; width: 300px; height: 30px;">올해 초 놀러갔을 때 사진들입니다 :D</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<script>
+    const images = document.querySelectorAll("#image-slider img");
+    let index = 0;
+    
+    function showImage() {
+      images[index].classList.remove("active");
+      index = (index + 1) % images.length;
+      images[index].classList.add("active");
+    }
+    
+    setInterval(showImage, 2000);
+  </script>

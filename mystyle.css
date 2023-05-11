@@ -1,0 +1,27 @@
+.my1 {
+    color: green;
+}
+
+.styleofH1{
+    color:blue;
+    font-size: 30px;
+}
+
+.ny2{
+    background-color:chocolate;
+}
+
+#image-slider img {
+    display: none;
+  }
+  
+  #image-slider img.active {
+    display: block;
+  }
+
+  #image-slider {
+    max-width: 50px;
+    margin: 0 auto;
+  }
+  
+  
